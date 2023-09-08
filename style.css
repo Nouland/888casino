@@ -1,0 +1,177 @@
+       /* Custom CSS */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Make the body at least as tall as the viewport */
+}
+
+.navigation {
+    background-image: url("images/navbar.png");
+    background-size: cover;
+    background-position: left; /* Set the background position to the left */
+    height: 100px; /* Set the desired height */
+    width: 100%; /* Set the desired width (adjust as needed) */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%; /* Set the desired width, this will make it 100% of the viewport width */
+}
+
+.img-display {
+    background-image: url("images/main_img.jfif");
+    background-size: cover;
+    height: 500px; /* Set the desired height */
+    width: 100%; /* Set the desired width, this will make it 100% of the viewport width */
+}
+.title-paragraph {
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Set a maximum width for the container */
+    padding: 20px; /* Add some padding for better readability */
+}
+
+.title {
+    font-size: 24px; /* Set your desired font size */
+    color: #4ad800;
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.paragraph {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px 0px 25px 0px;
+}
+.paragraph1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: -19px 0px 25px 0px;
+}
+.paragraph2 {
+    font-size: 15px; /* Set your desired font size */
+    color: rgb(151, 151, 151);
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px 0px 25px 0px;
+}
+.text-color{
+    font-size: 18px; /* Set your desired font size */
+    color: #4ad800;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-primary {
+    border-radius: 20px; /* Adjust the border-radius as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #ffe400;
+}
+/* Footer styles */
+.footer {
+    background-color: green; /* Set the background color to green */
+    display: flex; /* Use flexbox for the footer */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 50px; /* Set the desired height */
+    width: 100%; /* Set the desired width */
+}
+
+.link-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.link-footer li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.link-footer li:last-child {
+    margin-right: 0;
+}
+
+.link-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-link {
+    margin: 0px 20px 0px 20px;
+}
+/* Add vertical line */
+.footer-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    bottom: 0;
+    width: 2px;
+    background-color: #fff;
+}
+@media screen and (max-width: 1214px) {
+    .navigation {
+        background-image: url("images/navbar.png");
+        background-size: cover;
+        height: 100px; /* Set the desired height */
+        width: 100%; /* Set the desired width, this will make it 100% of the viewport width */
+       
+    }
+    .img-display {
+        background-image: url("images/main_img.jfif");
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .navigation {
+        background-image: url("images/navbar.png");
+        background-size: cover;
+
+        
+    }
+    .img-display {
+        background-image: url("images/main_img.jfif");
+    }
+    .btn-primary {
+        border-radius: 40px;
+        font-size: 27px;
+        color: #26282b;
+        padding: 10px 20px;
+        background-color: #ffe400;
+        width: 90%;
+        /* height: 49px; */
+        font-weight: 600;
+    }
+    .title-paragraph{
+        margin: 0px 40px 0px 40px;
+    }
+}
+@media screen and (max-width: 503px) {
+    .navigation {
+        background-image: url("images/navbar.png");
+        background-size: cover;
+        height: 100px; /* Set the desired height */
+        width: 100%; /* Set the desired width, this will make it 100% of the viewport width */
+        
+    }
+    .img-display {
+        background-image: url("images/main_img.jfif");
+    }
+    .footer {
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        font-size: 12px;
+    }
+}
