@@ -172,7 +172,7 @@ body {
         background-image: url("images/navbar.png");
         background-size: cover;
     }
-        .img-display {
+    .img-display {
         display: none;
     }
     .image-front{
@@ -221,6 +221,13 @@ body {
         background-size: cover;
         height: 100px; /* Set the desired height */
         width: 100%; /* Set the desired width, this will make it 100% of the viewport width */       
+    }
+    .img-display {
+        display: none;
+    }
+    .image-front{
+        display: block;
+        margin: 0;
     }
     .footer {
         background-color: green;
