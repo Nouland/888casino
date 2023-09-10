@@ -16,6 +16,9 @@ body {
     height: 100px; /* Set the desired height */
     width: 100%; /* Set the desired width (adjust as needed) */
 }
+.image-front{
+    display: none;
+}
 
 .img-fluid {
     max-width: 100%;
@@ -70,6 +73,7 @@ body {
 .btn-primary {
     border-radius: 20px; /* Adjust the border-radius as needed */
     font-size: 18px; /* Adjust the font size as needed */
+    font-weight: 600;
     padding: 10px 20px; /* Adjust the padding as needed */
     background-color: #ffe400;
 }
@@ -146,13 +150,9 @@ body {
 @media screen and (max-width: 1000px) {
     .navigation {
         background-image: url("images/navbar.png");
-        background-size: cover;
+        background-size: cover;       
+    }
 
-        
-    }
-    .img-display {
-        background-image: url("images/main_img.jfif");
-    }
     .btn-primary {
         border-radius: 40px;
         font-size: 27px;
@@ -171,11 +171,13 @@ body {
     .navigation {
         background-image: url("images/navbar.png");
         background-size: cover;
-
-        
     }
-    .img-display {
-        background-image: url("images/main_img.jfif");
+        .img-display {
+        display: none;
+    }
+    .image-front{
+        display: block;
+        margin: 0;
     }
     .btn-primary {
         border-radius: 40px;
@@ -218,11 +220,7 @@ body {
         background-image: url("images/navbar.png");
         background-size: cover;
         height: 100px; /* Set the desired height */
-        width: 100%; /* Set the desired width, this will make it 100% of the viewport width */
-        
-    }
-    .img-display {
-        background-image: url("images/main_img.jfif");
+        width: 100%; /* Set the desired width, this will make it 100% of the viewport width */       
     }
     .footer {
         background-color: green;
